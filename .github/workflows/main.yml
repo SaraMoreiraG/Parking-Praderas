@@ -28,4 +28,4 @@ jobs:
       run: |
         git config --global user.name "SaraMoreiraG"
         git config --global user.email "sara_moreira@hotmail.es"
-        npx gh-pages -d build -r https://x-access-token:${{ secrets.GH_PAGES_TOKEN }}@github.com/SaraMoreiraG/EscenIArte.git
+        npx gh-pages -d build -r https://x-access-token:${{ secrets.GH_PAGES_TOKEN }}@github.com/SaraMoreiraG/Parking-Praderas.git
