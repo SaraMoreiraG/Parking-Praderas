@@ -1,11 +1,12 @@
 import './App.css';
+import banner from './images/banner.jpg'
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <h1>Parking las Praderas</h1>
-      </div>
+        <div className='row m-0'>
+        <img src={banner} className='img-fluid p-0'/>
+        </div>
     </div>
   );
 }
