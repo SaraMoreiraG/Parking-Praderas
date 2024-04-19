@@ -5,6 +5,11 @@
   background-color: #de8229;
   color: #f6f6f6;
   padding: 0 60px;
+  font-family: 'Acumin';
+}
+.nav h1,
+.nav h5{
+  margin: 0;
 }
 .nav-title,
 .nav-menu,
@@ -27,4 +32,64 @@
 }
 .nav-social i{
   font-size: 32px;
+}
+
+.btn-purple{
+  background: rgb(117,57,207);
+  background: linear-gradient(180deg, rgba(117,57,207,1) 0%, rgba(124,99,193,1) 50%, rgba(152,150,196,1) 100%);
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-size: 20px;
+  color: #fcfefc;
+  border-radius: 25px;
+  padding: 7px 0px 5px 0px;
+}
+#services,
+#map {
+  margin: 50px 60px 40px 60px;
+}
+#map {
+  background-color: #f69e4f;
+}
+
+.service-card {
+  /* display: flex; */
+  /* align-items: center;
+  text-align: center; */
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.service-card.big,
+.service-card.medium {
+  background-size: cover;
+  color: #fefefe;
+
+}
+
+.service-card.big{
+  display: flex;
+  align-items: center;
+  background-image: url("images/ducha.jpeg");
+  padding: 30px 35px;
+}
+
+.service-card.small{
+  background-color: #f5a45a;
+  padding: 30px 45px 30px 35px;
+  color: #050000;
+}
+
+.service-card.medium{
+  background-color: #de8229;
+  padding: 50px 45px 50px 45px;
+  background-image: url("images/ducha.jpeg");
+}
+
+#map p{
+  font-size: 24px;
+  font-family: 'Acumin';
+}
+#map i{
+  font-size: 24px;
 }

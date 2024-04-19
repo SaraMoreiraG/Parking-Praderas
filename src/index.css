@@ -1,8 +1,17 @@
+@font-face {
+  font-family: Acumin;
+  src: url("fonts/Acumin-RPro.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Acumin-bold;
+  font-weight: bold;
+  src: url("fonts/Acumin-BdPro.otf") format("opentype");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Acumin-bold', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

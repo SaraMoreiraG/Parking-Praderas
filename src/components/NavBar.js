@@ -10,15 +10,9 @@ function NavBar() {
 			<h1>Parkig las praderas</h1>
 		</div>
 		<div className='nav-menu col-6'>
-			<div>
-			<h5>Servicios</h5>
-			</div>
-			<div>
-			<h5>Precios</h5>
-			</div>
-			<div>
-			<h5>Ubicación</h5>
-			</div>
+			<h5>SERVICIOS</h5>
+			<h5>PRECIOS</h5>
+			<h5>UBICACIÓN</h5>
 		</div>
 		<div className='nav-social col-2'>
 		<i class="fa-brands fa-instagram me-3"></i>
