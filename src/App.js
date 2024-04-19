@@ -1,7 +1,6 @@
 import NavBar from "./components/NavBar";
 
 import banner from "./images/banner.jpg";
-import mapPhone from "./images/maps-phone.webp";
 
 import "./App.css";
 
@@ -80,6 +79,7 @@ function App() {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               className="m-0"
+              title="mapa1"
             ></iframe>
           </div>
           <div className="col-6 d-flex align-items-center">
