@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/Parking-Praderas/static/css/main.5e37b0c8.css",
-    "main.js": "/Parking-Praderas/static/js/main.0b071cb5.js",
+    "main.css": "/Parking-Praderas/static/css/main.867f75f1.css",
+    "main.js": "/Parking-Praderas/static/js/main.ae80a1c2.js",
     "static/js/453.6babb453.chunk.js": "/Parking-Praderas/static/js/453.6babb453.chunk.js",
+    "static/media/caravana.jpg": "/Parking-Praderas/static/media/caravana.7a00735013b3fac3c15c.jpg",
+    "static/media/autocaravana.jpg": "/Parking-Praderas/static/media/autocaravana.a0476c5468dbb1048391.jpg",
+    "static/media/camion.jpg": "/Parking-Praderas/static/media/camion.36dde0ba5a3108f4790e.jpg",
     "static/media/banner.jpg": "/Parking-Praderas/static/media/banner.03dd69bcbac38dc4431f.jpg",
     "static/media/ducha.jpeg": "/Parking-Praderas/static/media/ducha.c0137aa152f20e1ddd28.jpeg",
     "static/media/Acumin-BdPro.otf": "/Parking-Praderas/static/media/Acumin-BdPro.9fbc064b12f7e5583783.otf",
     "static/media/Acumin-RPro.otf": "/Parking-Praderas/static/media/Acumin-RPro.0ff8c5d6797bc06270d7.otf",
     "static/media/logo512.png": "/Parking-Praderas/static/media/logo512.5f52e591f194eca41327.png",
+    "static/media/payment.png": "/Parking-Praderas/static/media/payment.57e8cc785eb3e4ddcf4b.png",
     "index.html": "/Parking-Praderas/index.html",
-    "main.5e37b0c8.css.map": "/Parking-Praderas/static/css/main.5e37b0c8.css.map",
-    "main.0b071cb5.js.map": "/Parking-Praderas/static/js/main.0b071cb5.js.map",
+    "main.867f75f1.css.map": "/Parking-Praderas/static/css/main.867f75f1.css.map",
+    "main.ae80a1c2.js.map": "/Parking-Praderas/static/js/main.ae80a1c2.js.map",
     "453.6babb453.chunk.js.map": "/Parking-Praderas/static/js/453.6babb453.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e37b0c8.css",
-    "static/js/main.0b071cb5.js"
+    "static/css/main.867f75f1.css",
+    "static/js/main.ae80a1c2.js"
   ]
 }
