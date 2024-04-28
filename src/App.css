@@ -23,17 +23,22 @@
 .nav-social{
   justify-content: end;
 }
-
 .nav-title h1{
   font-size: 24px;
 }
 .nav-title img{
   max-height: 50px;
 }
-.nav-social i{
+.nav-social i,
+.social-media-icons,
+.social-footer{
   font-size: 32px;
 }
-
+.social-media-icons i{
+  background-color: #fcdbb8;
+  padding: 10px;
+  border-radius: 25px;
+}
 .btn-purple{
   background: rgb(117,57,207);
   background: linear-gradient(180deg, rgba(117,57,207,1) 0%, rgba(124,99,193,1) 50%, rgba(152,150,196,1) 100%);
@@ -44,6 +49,10 @@
   border-radius: 25px;
   padding: 7px 0px 5px 0px;
 }
+a {
+  text-decoration: none;
+  color: #fcfefc;
+}
 #services,
 #map {
   margin: 50px 60px 40px 60px;
@@ -51,7 +60,24 @@
 #map {
   background-color: #f69e4f;
 }
-
+#about-us{
+  margin: 40px 0px 40px 0px;
+  padding: 35px;
+  background: rgb(252,219,184);
+background: linear-gradient(159deg, rgba(252,219,184,1) 0%, rgba(252,234,214,1) 50%, rgba(255,255,255,1) 100%);
+}
+#footer{
+  border-top: 1px solid #8a898e;
+  color: #4c4c4c;
+  margin: 50px 0px 40px 0px;
+  padding: 20px 80px;
+}
+#sub-footer{
+  background-color: #4c4c4c;
+  padding: 15px 0;
+  text-align: center;
+  color: #f6f6f6;
+}
 .service-card {
   /* display: flex; */
   /* align-items: center;
@@ -92,4 +118,77 @@
 }
 #map i{
   font-size: 24px;
+}
+
+.selection-card{
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 25px;
+}
+.selection-card:hover{
+  cursor: pointer;
+}
+.selection-card.selected{
+  border: 2px solid rgba(152,150,196,1);
+}
+.card-image{
+  border-radius: 25px;
+}
+
+.toggle {
+  background: #eee;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 50px;
+}
+
+label {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  display: flex;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.25s ease 0s;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  margin-left: 50px;
+  background: #47c;
+}
+
+.toggle:before, .toggle:after {
+  content: "1";
+  position: absolute;
+  font-size: 12px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 0;
+  color: #47c;
+}
+
+.toggle:after {
+  content: "6";
+  margin-top: -40px;
+  margin-left: 50px;
+  color: #666;
+}
+
+label {
+ position: relative;
+ z-index: 1;
+}
+
+.price {
+  color: #de8229;
+  font-weight: bold;
 }
