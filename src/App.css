@@ -192,3 +192,9 @@ label {
   color: #de8229;
   font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+  #map{
+    margin: 50px 0px 40px 0px;
+  }
+}

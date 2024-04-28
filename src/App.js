@@ -14,6 +14,16 @@ function App() {
   const [month, setMonth] = useState(0);
   const [vehicle, setVehicle] = useState("");
 
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
+
   console.log(month, vehicle);
   return (
     <div className="App">
@@ -29,8 +39,8 @@ function App() {
         <div className="row text-center mx-0 mb-4">
           <h2>Nuestros Servicios</h2>
         </div>
-        <div className="row">
-          <div className="col-4 d-flex align-items-stretch ">
+        <div className="row g-3">
+          <div className="d-flex align-items-stretch col-lg-4 col-md-6">
             <div className="service-card big">
               <div>
                 <h3>Duchas</h3>
@@ -41,7 +51,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4 col-md-6">
             <div className="service-card small mb-2">
               <h3>Duchas</h3>
               <p>
@@ -57,7 +67,7 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4 col-md-12">
             <div className="service-card medium mb-2">
               <h3>Duchas</h3>
               <p>
@@ -75,12 +85,12 @@ function App() {
           </div>
         </div>
         <div className="row justify-content-center my-5">
-          <div className="btn-purple col-2">Reserva ahora!</div>
+          <div className="btn-purple col-lg-2 col-md-3 col-sm-4 col-6" onClick={() => scrollToSection('map')}>Reserva ahora!</div>
         </div>
       </section>
       <section id="map">
         <div className="row mt-0 pt-5">
-          <div className="col-6 d-flex justify-content-end">
+          <div className="col-lg-6 d-flex justify-content-center mb-4">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.6297372894505!2d-3.8253002241077914!3d40.15053067179838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41f7cb616e31a5%3A0x3b06f388314143fd!2sParking%20las%20praderas%20Illescas!5e0!3m2!1ses!2ses!4v1713542879384!5m2!1ses!2ses"
               width="600"
@@ -92,7 +102,7 @@ function App() {
               title="mapa1"
             ></iframe>
           </div>
-          <div className="col-6 align-items-center">
+          <div className="col-lg-6 align-items-center mt-4">
             <div className="ms-3 row">
               <div className="d-flex col-12">
                 <i className="fa-solid fa-map-location-dot me-3"></i>
@@ -121,7 +131,7 @@ function App() {
               </div>
             </div>
             {month === 0 ? (
-              <div className="d-flex col-6 text-end justify-content-end pe-3 pt-2">
+              <div className="d-flex col-6 text-end justify-content-end pe-3 pt-2 pb-3">
                 <span>1. Elige número de meses</span>
                 <i className="fa-regular fa-hand-point-up ms-3"></i>
               </div>
@@ -299,7 +309,7 @@ function App() {
         <div className="row justify-content-center mx-0 mb-4">
           <div className="social-media-icons text-center col-3">
             <i className="fa-brands fa-instagram me-3"></i>
-            <i class="fa-brands fa-twitter me-3"></i>
+            <i className="fa-brands fa-twitter me-3"></i>
           </div>
         </div>
       </section>
@@ -309,7 +319,7 @@ function App() {
         </div>
         <div className="row">
           <div className="col-5"></div>
-          <div className="col-5">
+          <div className="col-lg-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -327,24 +337,24 @@ function App() {
           <h2>Pago seguro</h2>
         </div>
         <div className="row justify-content-center mx-0 mb-4">
-          <div className="social-media-icons text-center col-4">
+          <div className="social-media-icons text-center col-md-4 col-6">
             <img src={payment} alt="secure-payment" className="img-fluid" />
           </div>
         </div>
       </section>
       <section id="footer">
-        <div className="row mx-0">
-          <div className="col-6">
-            <h4 className="mb-4">Mira nuestro servicios</h4>
+        <div className="row g-3 mx-0">
+          <div className="col-sm-6">
+            <h4 className="mb-4" onClick={() => scrollToSection('services')}>Mira nuestro servicios</h4>
             <h4 className="mb-4">Política de privacidad</h4>
             <h4>Pago seguro</h4>
           </div>
-          <div className="col-6">
-            <h4 className="mb-4">¿Donde está el parking?</h4>
-            <h4 className="mb-4">Reserva en tan solo unos clicks</h4>
-            <div className="social-footer col-3">
+          <div className="col-sm-6">
+            <h4 className="mb-4" onClick={() => scrollToSection('map')}>¿Donde está el parking?</h4>
+            <h4 className="mb-4" onClick={() => scrollToSection('map')}>Reserva en tan solo unos clicks</h4>
+            <div className="social-footer col-lg-3 col-md-12">
               <i className="fa-brands fa-instagram me-4"></i>
-              <i class="fa-brands fa-twitter me-3"></i>
+              <i className="fa-brands fa-twitter me-3"></i>
             </div>
           </div>
         </div>
