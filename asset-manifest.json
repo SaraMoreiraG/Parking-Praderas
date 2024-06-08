@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Parking-Praderas/static/css/main.412b10ab.css",
-    "main.js": "/Parking-Praderas/static/js/main.be8f9ad5.js",
+    "main.css": "/Parking-Praderas/static/css/main.c66eb264.css",
+    "main.js": "/Parking-Praderas/static/js/main.f35b2134.js",
     "static/js/453.6babb453.chunk.js": "/Parking-Praderas/static/js/453.6babb453.chunk.js",
     "static/media/caravana.jpg": "/Parking-Praderas/static/media/caravana.7a00735013b3fac3c15c.jpg",
     "static/media/autocaravana.jpg": "/Parking-Praderas/static/media/autocaravana.a0476c5468dbb1048391.jpg",
@@ -13,12 +13,12 @@
     "static/media/logo512.png": "/Parking-Praderas/static/media/logo512.5f52e591f194eca41327.png",
     "static/media/payment.png": "/Parking-Praderas/static/media/payment.57e8cc785eb3e4ddcf4b.png",
     "index.html": "/Parking-Praderas/index.html",
-    "main.412b10ab.css.map": "/Parking-Praderas/static/css/main.412b10ab.css.map",
-    "main.be8f9ad5.js.map": "/Parking-Praderas/static/js/main.be8f9ad5.js.map",
+    "main.c66eb264.css.map": "/Parking-Praderas/static/css/main.c66eb264.css.map",
+    "main.f35b2134.js.map": "/Parking-Praderas/static/js/main.f35b2134.js.map",
     "453.6babb453.chunk.js.map": "/Parking-Praderas/static/js/453.6babb453.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.412b10ab.css",
-    "static/js/main.be8f9ad5.js"
+    "static/css/main.c66eb264.css",
+    "static/js/main.f35b2134.js"
   ]
 }
