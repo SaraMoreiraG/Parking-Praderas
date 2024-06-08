@@ -39,6 +39,25 @@
   padding: 10px;
   border-radius: 25px;
 }
+.nav-collapse{
+  display: none;
+}
+.nav-divider {
+  border: 0;
+  height: 1px;
+  background: #f6f6f6;
+  margin: 10px 0;
+}
+
+.nav-collapse i{
+  font-size: 20px;
+}
+.nav-collapse i:hover{
+  cursor: pointer;
+}
+.nav-collapse-text{
+
+}
 .btn-purple{
   background: rgb(117,57,207);
   background: linear-gradient(180deg, rgba(117,57,207,1) 0%, rgba(124,99,193,1) 50%, rgba(152,150,196,1) 100%);
@@ -47,7 +66,10 @@
   font-size: 20px;
   color: #fcfefc;
   border-radius: 25px;
-  padding: 7px 0px 5px 0px;
+  padding: 7px 3px 5px 3px;
+}
+.btn-purple:hover{
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -196,5 +218,20 @@ label {
 @media screen and (max-width: 768px) {
   #map{
     margin: 50px 0px 40px 0px;
+  }
+  .nav-menu,
+  .nav-social{
+    display: none;
+  }
+  .nav h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav h5 {
+    font-size: 0.75rem;
+  }
+
+  .nav i {
+    font-size: 1.2rem;
   }
 }

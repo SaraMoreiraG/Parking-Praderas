@@ -138,7 +138,7 @@ function App() {
             ) : (
               // Vehicles selection
               <div className="row mx-0 mt-3">
-                <div className="col-4">
+                <div className="col-3">
                   <div
                     className={`selection-card ${
                       vehicle === "caravana" ? "selected" : ""
@@ -158,7 +158,7 @@ function App() {
                     )}
                   </div>
                 </div>
-                <div className="col-4">
+                <div className="col-3">
                   <div
                     className={`selection-card ${
                       vehicle === "autocaravana" ? "selected" : ""
@@ -178,7 +178,7 @@ function App() {
                     )}
                   </div>
                 </div>
-                <div className="col-4">
+                <div className="col-3">
                   <div
                     className={`selection-card ${
                       vehicle === "camion" ? "selected" : ""
