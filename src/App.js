@@ -1,12 +1,17 @@
 import React, { useState } from "react";
+import { getAccessToken, fetchMerchantInfo } from "./api/bbva";
 
 import NavBar from "./components/NavBar";
+import Banner from "./components/Banner";
+import OurServices from "./components/OurServices";
+import BannerSocialMedia from "./components/BannerSocialMedia";
+import AboutUs from "./components/AboutUs";
+import BannerPayment from "./components/BannerPayment";
+import Footer from "./components/Footer";
 
-import banner from "./images/banner.jpg";
 import caravana from "./images/caravana.jpg";
 import autocaravana from "./images/autocaravana.jpg";
 import camion from "./images/camion.jpg";
-import payment from "./images/payment.png";
 
 import "./App.css";
 
@@ -14,80 +19,36 @@ function App() {
   const [month, setMonth] = useState(0);
   const [vehicle, setVehicle] = useState("");
 
-  function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: 'smooth'
-      });
-    }
-  }
+  const [accessToken, setAccessToken] = useState("");
+  const [merchantInfo, setMerchantInfo] = useState("");
+  const [error, setError] = useState("");
 
-  console.log(month, vehicle);
+  const handleGetAccessToken = async () => {
+    try {
+      const token = await getAccessToken();
+      setAccessToken(token);
+    } catch (error) {
+      console.error("Error obtaining access token:", error);
+      setError("Error obtaining access token");
+    }
+  };
+
+  const handleFetchMerchantInfo = async () => {
+    try {
+      const info = await fetchMerchantInfo(accessToken);
+      setMerchantInfo(info);
+    } catch (error) {
+      console.error("Error fetching merchant info:", error);
+      setError("Error fetching merchant info");
+    }
+  };
+
+  console.log(month, vehicle, process.env.REACT_APP_SECRET_KEY);
   return (
     <div className="App">
       <NavBar />
-      <section id="banner-home">
-        <img
-          src={banner}
-          className="img-fluid p-0"
-          alt="banner parking las praderas"
-        />
-      </section>
-      <section id="services">
-        <div className="row text-center mx-0 mb-4">
-          <h2>Nuestros Servicios</h2>
-        </div>
-        <div className="row g-3">
-          <div className="d-flex align-items-stretch col-lg-4 col-md-6">
-            <div className="service-card big">
-              <div>
-                <h3>Duchas</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="service-card small mb-2">
-              <h3>Duchas</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-              </p>
-            </div>
-            <div className="service-card medium">
-              <h3>Duchas</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-12">
-            <div className="service-card medium mb-2">
-              <h3>Duchas</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-              </p>
-            </div>
-            <div className="service-card small">
-              <h3>Duchas</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="row justify-content-center my-5">
-          <div className="btn-purple col-lg-2 col-md-3 col-sm-4 col-6" onClick={() => scrollToSection('map')}>Reserva ahora!</div>
-        </div>
-      </section>
+      <Banner />
+      <OurServices />
       <section id="map">
         <div className="row mt-0 pt-5">
           <div className="col-lg-6 d-flex justify-content-center mb-4">
@@ -212,6 +173,7 @@ function App() {
                 {vehicle === "caravana" ? (
                   <div className="row justify-content-center mt-2 mb-3">
                     <div className="btn-purple col-3">
+                      {/* BBVA API CALL HERE */}
                       <a
                         href="https://www.stripe.com"
                         className=" "
@@ -225,6 +187,7 @@ function App() {
                 ) : vehicle === "autocaravana" ? (
                   <div className="row justify-content-center mt-2 mb-3">
                     <div className="btn-purple col-3">
+                      {/* BBVA API CALL HERE */}
                       <a
                         href="https://www.stripe.com"
                         className=" "
@@ -238,6 +201,7 @@ function App() {
                 ) : vehicle === "camion" ? (
                   <div className="row justify-content-center mt-2 mb-3">
                     <div className="btn-purple col-3">
+                      {/* BBVA API CALL HERE */}
                       <a
                         href="https://www.stripe.com"
                         className=" "
@@ -258,6 +222,7 @@ function App() {
                 {vehicle === "caravana" ? (
                   <div className="row justify-content-center mt-2 mb-3">
                     <div className="btn-purple col-3">
+                      {/* BBVA API CALL HERE */}
                       <a
                         href="https://www.stripe.com"
                         className=" "
@@ -271,6 +236,7 @@ function App() {
                 ) : vehicle === "autocaravana" ? (
                   <div className="row justify-content-center mt-2 mb-3">
                     <div className="btn-purple col-3">
+                      {/* BBVA API CALL HERE */}
                       <a
                         href="https://www.stripe.com"
                         className=" "
@@ -284,6 +250,7 @@ function App() {
                 ) : vehicle === "camion" ? (
                   <div className="row justify-content-center mt-2 mb-3">
                     <div className="btn-purple col-3">
+                      {/* BBVA API CALL HERE */}
                       <a
                         href="https://www.stripe.com"
                         className=" "
@@ -302,63 +269,19 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="social-media">
-        <div className="row text-center mx-0">
-          <h2>Síguenos en redes</h2>
-        </div>
-        <div className="row justify-content-center mx-0 mb-4">
-          <div className="social-media-icons text-center col-3">
-            <i className="fa-brands fa-instagram me-3"></i>
-            <i className="fa-brands fa-twitter me-3"></i>
-          </div>
-        </div>
-      </section>
-      <section id="about-us">
-        <div className="row text-center mx-0 mb-2">
-          <h2>Sobre nosotros</h2>
-        </div>
-        <div className="row">
-          <div className="col-5"></div>
-          <div className="col-lg-5">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="secure-payment">
-        <div className="row text-center mx-0">
-          <h2>Pago seguro</h2>
-        </div>
-        <div className="row justify-content-center mx-0 mb-4">
-          <div className="social-media-icons text-center col-md-4 col-6">
-            <img src={payment} alt="secure-payment" className="img-fluid" />
-          </div>
-        </div>
-      </section>
-      <section id="footer">
-        <div className="row g-3 mx-0">
-          <div className="col-sm-6">
-            <h4 className="mb-4" onClick={() => scrollToSection('services')}>Mira nuestro servicios</h4>
-            <h4 className="mb-4">Política de privacidad</h4>
-            <h4>Pago seguro</h4>
-          </div>
-          <div className="col-sm-6">
-            <h4 className="mb-4" onClick={() => scrollToSection('map')}>¿Donde está el parking?</h4>
-            <h4 className="mb-4" onClick={() => scrollToSection('map')}>Reserva en tan solo unos clicks</h4>
-            <div className="social-footer col-lg-3 col-md-12">
-              <i className="fa-brands fa-instagram me-4"></i>
-              <i className="fa-brands fa-twitter me-3"></i>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div>
+        <button onClick={handleGetAccessToken}>Obtener Token</button>
+        <button onClick={handleFetchMerchantInfo} disabled={!accessToken}>
+          Obtener Información del Comerciante
+        </button>
+        <p>Token: {accessToken}</p>
+        <p>Información del Comerciante: {JSON.stringify(merchantInfo)}</p>
+        <p>Error: {error}</p>
+      </div>
+      <BannerSocialMedia />
+      <AboutUs />
+      <BannerPayment />
+      <Footer />
       <section id="sub-footer">
         <span>
           Developed with &#10084; by{" "}
