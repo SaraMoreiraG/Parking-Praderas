@@ -18,6 +18,7 @@ function VehicleSelection({ month, setMonth, vehicle, setVehicle }) {
       6: process.env.REACT_APP_STRIPE_CAMION_2,
     },
   };
+  console.log(stripeLinks)
   return (
     <div className="col-lg-6 col-md-12 mb-4 text-center">
       <h2>Reserva tu plaza de parking</h2>
