@@ -18,6 +18,10 @@ function AboutUs() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
+          <div className="d-flex align-items-center">
+            <i className="fa-regular fa-envelope me-2"></i>
+            <p className="m-0">parkinglaspraderas@gmail.com</p>
+          </div>
         </div>
       </div>
     </section>

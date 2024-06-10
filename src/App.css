@@ -30,19 +30,15 @@
 .nav-social {
   justify-content: end;
 }
+
 .nav-menu-small-wrap {
-  max-height: 200px; /* Establece una altura suficientemente grande */
+  /* max-height: 600px; */
+  /* Establece una altura suficientemente grande */
   overflow: hidden;
-  transition: max-height 0.3s ease; /* Aplica la transición */
+  transition: max-height 0.3s ease;
+  /* Aplica la transición */
 }
 
-
-
-
-
-/* .nav-title{
-  align-items: baseline;
-} */
 .nav-title img {
   height: 4vw;
   margin: 0 0;
@@ -67,16 +63,20 @@
   max-height: 50px;
 }
 
-.nav-social i,
-.social-media-icons,
-.social-footer {
+.nav-social i {
   font-size: 1.5vw;
   transition: transform 0.3s;
 }
 
+.social-media-icons i,
+.social-footer {
+  font-size: 1.8vw;
+  transition: transform 0.3s;
+}
+
 .nav-social i:hover,
-.social-media-icons:hover,
-.social-footer:hover {
+.social-media-icons i:hover,
+.social-footer i:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -86,6 +86,8 @@
   padding: 10px;
   border-radius: 25px;
 }
+
+
 
 .nav-collapse {
   display: none;
@@ -132,6 +134,8 @@ a {
 }
 
 #map {
+  display: flex;
+  align-items: center;
   background-color: #f69e4f;
 }
 
@@ -211,7 +215,7 @@ a {
 }
 
 .selection-card.selected {
-  border: 2px solid rgba(152, 150, 196, 1);
+  border: 2px solid rgba(117, 57, 207, 1);
 }
 
 .card-image {
@@ -276,6 +280,21 @@ label {
   font-weight: bold;
 }
 
+@media screen and (max-width: 992px) {
+  #map {
+    margin: 50px 0px 40px 0px;
+  }
+
+  .social-media-icons i,
+  .social-footer i {
+    font-size: 2.5vw;
+  }
+
+  #footer {
+    margin: 50px 0px 40px 0px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #map {
     margin: 50px 0px 40px 0px;
@@ -292,13 +311,17 @@ label {
 
   .nav h1 {
     font-size: 4vw;
-    /* Ajustando el tamaño de la fuente para dispositivos más pequeños */
   }
 
   .nav-collapse i,
   .nav-menu-small h5 {
     font-size: 2vw;
     transition: transform 0.3s;
+  }
+
+  .social-media-icons i,
+  .social-footer i {
+    font-size: 3.5vw;
   }
 
   .nav-collapse i:hover,
@@ -309,5 +332,24 @@ label {
 
   .nav i {
     font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav {
+    padding: 0 30px;
+  }
+  .nav h1 {
+    font-size: 4.5vw;
+  }
+
+  .nav-collapse i {
+    font-size: 4vw;
+  }
+
+  .nav-menu-small h5,
+  .social-media-icons i,
+  .social-footer i {
+    font-size: 4vw;
   }
 }

@@ -28,4 +28,10 @@ jobs:
       run: |
         git config --global user.name "SaraMoreiraG"
         git config --global user.email "sara_moreira@hotmail.es"
+        REACT_APP_STRIPE_CARAVANA_1=${{ secrets.REACT_APP_STRIPE_CARAVANA_1 }} \
+        REACT_APP_STRIPE_CARAVANA_6=${{ secrets.REACT_APP_STRIPE_CARAVANA_6 }} \
+        REACT_APP_STRIPE_AUTOCARAVANA_1=${{ secrets.REACT_APP_STRIPE_AUTOCARAVANA_1 }} \
+        REACT_APP_STRIPE_AUTOCARAVANA_6=${{ secrets.REACT_APP_STRIPE_AUTOCARAVANA_6 }} \
+        REACT_APP_STRIPE_CAMION_1=${{ secrets.REACT_APP_STRIPE_CAMION_1 }} \
+        REACT_APP_STRIPE_CAMION_6=${{ secrets.REACT_APP_STRIPE_CAMION_6 }} \
         npx gh-pages -d build -r https://x-access-token:${{ secrets.GH_PAGES_TOKEN }}@github.com/SaraMoreiraG/Parking-Praderas.git
