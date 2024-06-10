@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Parking-Praderas/static/css/main.c66eb264.css",
-    "main.js": "/Parking-Praderas/static/js/main.6cdfd4e1.js",
-    "static/js/453.6babb453.chunk.js": "/Parking-Praderas/static/js/453.6babb453.chunk.js",
-    "static/media/caravana.jpg": "/Parking-Praderas/static/media/caravana.7a00735013b3fac3c15c.jpg",
-    "static/media/autocaravana.jpg": "/Parking-Praderas/static/media/autocaravana.a0476c5468dbb1048391.jpg",
-    "static/media/camion.jpg": "/Parking-Praderas/static/media/camion.36dde0ba5a3108f4790e.jpg",
-    "static/media/banner.jpg": "/Parking-Praderas/static/media/banner.03dd69bcbac38dc4431f.jpg",
-    "static/media/ducha.jpeg": "/Parking-Praderas/static/media/ducha.c0137aa152f20e1ddd28.jpeg",
-    "static/media/Acumin-BdPro.otf": "/Parking-Praderas/static/media/Acumin-BdPro.9fbc064b12f7e5583783.otf",
-    "static/media/Acumin-RPro.otf": "/Parking-Praderas/static/media/Acumin-RPro.0ff8c5d6797bc06270d7.otf",
-    "static/media/logo512.png": "/Parking-Praderas/static/media/logo512.5f52e591f194eca41327.png",
-    "static/media/payment.png": "/Parking-Praderas/static/media/payment.57e8cc785eb3e4ddcf4b.png",
-    "index.html": "/Parking-Praderas/index.html",
-    "main.c66eb264.css.map": "/Parking-Praderas/static/css/main.c66eb264.css.map",
-    "main.6cdfd4e1.js.map": "/Parking-Praderas/static/js/main.6cdfd4e1.js.map",
-    "453.6babb453.chunk.js.map": "/Parking-Praderas/static/js/453.6babb453.chunk.js.map"
+    "main.css": "/static/css/main.5d4f0f35.css",
+    "main.js": "/static/js/main.92dab568.js",
+    "static/js/453.6babb453.chunk.js": "/static/js/453.6babb453.chunk.js",
+    "static/media/caravana.jpg": "/static/media/caravana.7a00735013b3fac3c15c.jpg",
+    "static/media/autocaravana.jpg": "/static/media/autocaravana.a0476c5468dbb1048391.jpg",
+    "static/media/camion.jpg": "/static/media/camion.36dde0ba5a3108f4790e.jpg",
+    "static/media/banner.jpg": "/static/media/banner.03dd69bcbac38dc4431f.jpg",
+    "static/media/ducha.jpeg": "/static/media/ducha.c0137aa152f20e1ddd28.jpeg",
+    "static/media/Acumin-BdPro.otf": "/static/media/Acumin-BdPro.9fbc064b12f7e5583783.otf",
+    "static/media/Acumin-RPro.otf": "/static/media/Acumin-RPro.0ff8c5d6797bc06270d7.otf",
+    "static/media/logo512.png": "/static/media/logo512.5f52e591f194eca41327.png",
+    "static/media/payment.png": "/static/media/payment.57e8cc785eb3e4ddcf4b.png",
+    "index.html": "/index.html",
+    "main.5d4f0f35.css.map": "/static/css/main.5d4f0f35.css.map",
+    "main.92dab568.js.map": "/static/js/main.92dab568.js.map",
+    "453.6babb453.chunk.js.map": "/static/js/453.6babb453.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c66eb264.css",
-    "static/js/main.6cdfd4e1.js"
+    "static/css/main.5d4f0f35.css",
+    "static/js/main.92dab568.js"
   ]
 }
