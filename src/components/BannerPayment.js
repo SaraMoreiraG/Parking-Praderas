@@ -9,7 +9,7 @@ function BannerPayment() {
         <h2>Pago seguro</h2>
       </div>
       <div className="row justify-content-center mx-0 mb-4">
-        <div className="social-media-icons text-center col-md-4 col-6">
+        <div className="social-media-icons text-center col-md-4 col-sm-6 col-9">
           <img src={payment} alt="secure-payment" className="img-fluid" />
         </div>
       </div>

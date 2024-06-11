@@ -54,7 +54,7 @@ const OurServices = () => {
       </div>
       <div className="row justify-content-center my-5">
         <div
-          className="btn-purple col-lg-2 col-md-3 col-sm-4 col-6"
+          className="btn-purple col-lg-3 col-md-4 col-sm-4 col-8"
           onClick={() => scrollToSection("map")}
         >
           Reserva ahora!
