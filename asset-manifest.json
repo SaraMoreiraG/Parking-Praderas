@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0f1eba0e.css",
-    "main.js": "/static/js/main.434f6b23.js",
+    "main.js": "/static/js/main.28f3c9b6.js",
     "static/js/453.6babb453.chunk.js": "/static/js/453.6babb453.chunk.js",
     "static/media/caravana.jpg": "/static/media/caravana.7a00735013b3fac3c15c.jpg",
     "static/media/autocaravana.jpg": "/static/media/autocaravana.a0476c5468dbb1048391.jpg",
@@ -14,11 +14,11 @@
     "static/media/payment.png": "/static/media/payment.57e8cc785eb3e4ddcf4b.png",
     "index.html": "/index.html",
     "main.0f1eba0e.css.map": "/static/css/main.0f1eba0e.css.map",
-    "main.434f6b23.js.map": "/static/js/main.434f6b23.js.map",
+    "main.28f3c9b6.js.map": "/static/js/main.28f3c9b6.js.map",
     "453.6babb453.chunk.js.map": "/static/js/453.6babb453.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f1eba0e.css",
-    "static/js/main.434f6b23.js"
+    "static/js/main.28f3c9b6.js"
   ]
 }
