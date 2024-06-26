@@ -149,6 +149,10 @@ a {
   background: linear-gradient(159deg, rgba(252, 219, 184, 1) 0%, rgba(252, 234, 214, 1) 50%, rgba(255, 255, 255, 1) 100%);
 }
 
+#about-us img{
+  height: 200px;
+}
+
 #footer {
   border-top: 1px solid #8a898e;
   color: #4c4c4c;
@@ -194,7 +198,15 @@ a {
 .service-card.medium {
   background-color: #de8229;
   padding: 50px 45px 50px 45px;
-  background-image: url("images/ducha.jpeg");
+}
+
+.service-card.camera {
+  background-image: url("images/camara.png");
+}
+
+.service-card.map {
+  color: #050000;
+  background-image: url("images/mapa.png");
 }
 
 #map p {

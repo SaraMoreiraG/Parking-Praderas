@@ -1,5 +1,5 @@
-import React from 'react';
-import { scrollToSection } from '../utils/scrollToSection';
+import React from "react";
+import { scrollToSection } from "../utils/scrollToSection";
 
 const OurServices = () => {
   return (
@@ -13,41 +13,47 @@ const OurServices = () => {
             <div>
               <h3>Duchas</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Después de largas horas en la carretera, disfruta de un merecido
+                descanso con nuestras duchas siempre limpias, además de aseos
+                perfectamente equipados para ofrecerte la máxima comodidad.
               </p>
             </div>
           </div>
         </div>
         <div className="col-lg-4 col-md-6">
           <div className="service-card small mb-2">
-            <h3>Duchas</h3>
+            <h3>Zona de lavado</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Mantén tu camión o autocaravana impecable en nuestra completa zona
+              de lavado, equipada con todo lo necesario para que tu vehículo
+              esté siempre en perfectas condiciones.
             </p>
           </div>
-          <div className="service-card medium">
-            <h3>Duchas</h3>
+          <div className="service-card medium map">
+            <h3>Acceso excelente</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Llegar a nuestro parking nunca ha sido tan fácil, gracias a
+              nuestro acceso inmejorable que te permite maniobrar con comodidad
+              y rapidez, sin complicaciones.
             </p>
           </div>
         </div>
         <div className="col-lg-4 col-md-12">
-          <div className="service-card medium mb-2">
-            <h3>Duchas</h3>
+          <div className="service-card medium camera mb-2">
+            <h3>Cámaras de vigilancia</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Tu tranquilidad es nuestra prioridad; nuestras cámaras de
+              vigilancia 24/7 aseguran que tu vehículo y tus pertenencias estén
+              siempre protegidos.
             </p>
           </div>
           <div className="service-card small">
-            <h3>Duchas</h3>
+            <h3>Próximamente: Almacenes</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              ¡Muy pronto! Disfruta de la comodidad y seguridad de nuestros
+              almacenes, con espacios que varían entre 2 y 150 metros cuadrados,
+              especialmente diseñados para cubrir todas tus necesidades de
+              almacenamiento y logística.
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/logo192.png";
 
 function AboutUs() {
   return (
@@ -7,16 +8,20 @@ function AboutUs() {
         <h2>Sobre nosotros</h2>
       </div>
       <div className="row">
-        <div className="col-5"></div>
+        <div className="col-5 text-end">
+        <img src={logo} alt="logo parking las praderas"/>
+        </div>
         <div className="col-lg-5">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            En Parking Las Praderas, nos dedicamos a proporcionar un espacio
+            seguro, cómodo y accesible para camioneros, autocaravanistas y
+            profesionales de la logística. Con instalaciones modernas y
+            servicios pensados para facilitar tu día a día, nuestro objetivo es
+            ofrecerte un lugar donde puedas descansar, mantener tu vehículo en
+            óptimas condiciones y sentirte tranquilo sabiendo que contamos con
+            vigilancia las 24 horas. Somos tu aliado en la carretera,
+            comprometidos con la calidad y la satisfacción de cada uno de
+            nuestros clientes.
           </p>
           <div className="d-flex align-items-center">
             <i className="fa-regular fa-envelope me-2"></i>
